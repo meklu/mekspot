@@ -33,10 +33,4 @@ foreach ($arr["xesam:artist"] as $a) {
 	}
 }
 
-$title = htmlspecialchars($title);
-$artist = htmlspecialchars($artist);
-
-$title = str_replace("-", "&45;", $title);
-$artist = str_replace("-", "&45;", $artist);
-
 echo $title . "\0" . $artist;
